@@ -1,0 +1,11 @@
+addAssignees: true
+assignees:
+  - JeyZ9   # <-- เปลี่ยนเป็น username ของคนที่คุณอยาก assign
+
+addReviewers: true
+reviewers:
+  - JeyZ9   # <-- หรือใครก็ได้ที่อยากให้เป็น reviewer
+
+skipDraft: true           # ไม่ทำงานกับ draft PR
+numberOfAssignees: 1      # กี่คนก็ได้
+numberOfReviewers: 1
