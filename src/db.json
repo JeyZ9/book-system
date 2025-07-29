@@ -1,0 +1,58 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "โลกของโซฟี",
+      "type": "ปรัชญา",
+      "img": "https://example.com/images/sophie-world.jpg"
+    },
+    {
+      "id": "2",
+      "title": "เจ้าชายน้อย",
+      "type": "วรรณกรรมเยาวชน",
+      "img": "https://example.com/images/little-prince.jpg"
+    },
+    {
+      "id": "3",
+      "title": "Harry Potter and the Philosopher's Stone",
+      "type": "แฟนตาซี",
+      "img": "https://example.com/images/harry-potter-1.jpg"
+    },
+    {
+      "id": "4",
+      "title": "1984 - George Orwell",
+      "type": "นิยายวิทยาศาสตร์, ดิสโทเปีย",
+      "img": "https://example.com/images/1984-orwell.jpg"
+    },
+    {
+      "id": "5",
+      "title": "โกโก้กับความลับของช็อกโกแลต",
+      "type": "สารคดี",
+      "img": "https://example.com/images/cocoa-book.jpg"
+    },
+    {
+      "id": "6",
+      "title": "ช่างภาพในป่าใหญ่",
+      "type": "สารคดี, ธรรมชาติ",
+      "img": "https://example.com/images/forest-photographer.jpg"
+    },
+    {
+      "id": "7",
+      "title": "ดินแดนไร้เงา",
+      "type": "แฟนตาซี, วรรณกรรมไทย",
+      "img": "https://example.com/images/shadowless-land.jpg"
+    },
+    {
+      "id": "8",
+      "title": "ความสุขของกะทิ",
+      "type": "วรรณกรรมไทย",
+      "img": "https://example.com/images/kati.jpg"
+    },
+    {
+      "id": "9",
+      "title": "โรตีชาเย็นกับเรื่องเล่าริมทาง",
+      "type": "เรื่องสั้น, ไลฟ์สไตล์",
+      "img": "https://example.com/images/roti-book.jpg"
+    }
+  ]
+}
