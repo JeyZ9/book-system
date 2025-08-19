@@ -6,7 +6,7 @@ const NavBar = () => {
       url: "/",
     },
     {
-      name: "Add Books",
+      name: "Recommend Books",
       url: '/add',
     },
     {
@@ -36,7 +36,8 @@ const NavBar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 w-52 rounded-box bg-base-100 p-2 shadow z-10">
+            className="menu menu-sm dropdown-content mt-3 w-52 rounded-box bg-base-100 p-2 shadow z-10"
+          >
             {menuItems.map((item, index) => (
               <li key={index}>
                 <a href={item.url}>{item.name}</a>
@@ -54,10 +55,6 @@ const NavBar = () => {
             </li>
           ))}
         </ul>
-      </div>
-      <div className="navbar-end flex gap-2">
-        <a className="btn btn-outline btn-primary">Register</a>
-        <a className="btn btn-outline btn-secondary">Log In</a>
       </div>
     </div>
   );
