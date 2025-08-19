@@ -1,0 +1,58 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "โลกของโซฟี",
+      "type": "ปรัชญา",
+      "img": "https://storage.naiin.com/system/application/bookstore/resource/product/202401/600402/1000268236_front_XXL.jpg"
+    },
+    {
+      "id": "2",
+      "title": "เจ้าชายน้อย",
+      "type": "วรรณกรรมเยาวชน",
+      "img": "https://image.makewebcdn.com/makeweb/m_1920x0/7GFEYsdVK/DefaultData/%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%8A%E0%B8%B2%E0%B8%A2%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%A2_2.jpg"
+    },
+    {
+      "id": "3",
+      "title": "Harry Potter and the Philosopher's Stone",
+      "type": "แฟนตาซี",
+      "img": "https://bci.kinokuniya.com/th/jsp/images/book-img/97814/97814088/9781408855652.JPG"
+    },
+    {
+      "id": "4",
+      "title": "1984 - George Orwell",
+      "type": "นิยายวิทยาศาสตร์, ดิสโทเปีย",
+      "img": "https://bci.kinokuniya.com/jsp/images/book-img/97801/97801410/9780141036144.JPG"
+    },
+    {
+      "id": "5",
+      "title": "ประวัติศาสตร์ช็อกโกแลต ฉบับเข้มข้น (The True History of Chocolate)",
+      "type": "สารคดี",
+      "img": "https://bookscape.co/wp-content/uploads/2023/06/Chocolate_COVER_05-01-copy.png"
+    },
+    {
+      "id": "6",
+      "title": "บ้านเล็กในป่าใหญ่",
+      "type": "สารคดี, ธรรมชาติ",
+      "img": "https://library.wu.ac.th/content/wp-content/uploads/sites/8/2020/05/%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B9%80%E0%B8%A5%E0%B9%87%E0%B8%81%E0%B9%83%E0%B8%99%E0%B8%9B%E0%B9%88%E0%B8%B2%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88-e1729920858961.jpg"
+    },
+    {
+      "id": "7",
+      "title": "ดินแดนไร้เเสง",
+      "type": "แฟนตาซี, วรรณกรรมไทย",
+      "img": "https://image.makewebcdn.com/makeweb/m_1920x0/7GFEYsdVK/DefaultData/NTE_front_cover.png?v=202405291424"
+    },
+    {
+      "id": "8",
+      "title": "ความสุขของกะทิ",
+      "type": "วรรณกรรมไทย",
+      "img": "https://storage.naiin.com/system/application/bookstore/resource/product/201609/200085/1000189367_front_XXL.jpg"
+    },
+    {
+      "id": "9",
+      "title": "หนังสือที่ไม่มีเรื่องราว",
+      "type": "เรื่องสั้น, ไลฟ์สไตล์",
+      "img": "https://platform-api.nanmeebooks.com/uploads/upload/file/cover_image/9786160448395.jpg"
+    }
+  ]
+}
