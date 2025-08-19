@@ -24,6 +24,7 @@ const Card = (props) => {
         const response = await fetch("http://localhost:5000/books/" + id, {
           method: "Delete",
         });
+        return response;
       }
     } catch (error) {
       console.log(error);
