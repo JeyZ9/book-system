@@ -7,11 +7,11 @@ const NavBar = () => {
     },
     {
       name: "Recommend Books",
-      url: '/add',
+      url: '/',
     },
     {
-      name: "About Us",
-      url: "/",
+      name: "Add New Book",
+      url: "/add",
     },
   ];
   return (

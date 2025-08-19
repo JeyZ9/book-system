@@ -22,7 +22,7 @@ const Update = () => {
 
   const handleSubmit = async () => {
     if (!book.title || !book.type || !book.img) {
-      Swal.fire({
+      await Swal.fire({
         icon: 'warning',
         title: 'Incomplete Data',
         text: 'Please fill in all fields!',
@@ -38,17 +38,26 @@ const Update = () => {
       });
 
       if (response.ok) {
-        Swal.fire({
+        await Swal.fire({
           icon: 'success',
           title: 'Success!',
           text: 'Book updated successfully',
-        }).then(() => navigate("/"));
+        });
+        navigate("/"); 
       } else {
-        Swal.fire({ icon: 'error', title: 'Failed', text: 'Could not update book' });
+        await Swal.fire({
+          icon: 'error',
+          title: 'Failed',
+          text: 'Could not update book',
+        });
       }
     } catch (error) {
       console.error(error);
-      Swal.fire({ icon: 'error', title: 'Error', text: 'Something went wrong' });
+      await Swal.fire({
+        icon: 'error',
+        title: 'Error',
+        text: 'Something went wrong',
+      });
     }
   };
 
