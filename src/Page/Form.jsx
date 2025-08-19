@@ -1,12 +1,13 @@
-import React, { useState } from 'react';
-import Swal from 'sweetalert2';
-import NavBar from '../Component/NavBar';
-import { useNavigate } from 'react-router';
+import React, { useState } from "react";
+import Swal from "sweetalert2";
+import NavBar from "../Component/NavBar";
+import { useNavigate } from "react-router";
+import axios from "axios";
 const Form = () => {
   const [book, setBook] = useState({
-    title: '',
-    type: '',
-    img: '',
+    title: "",
+    type: "",
+    img: "",
   });
 
   const navigate = useNavigate();
@@ -20,59 +21,51 @@ const Form = () => {
     // ตรวจสอบว่า input ไม่ว่าง
     if (!book.title || !book.type || !book.img) {
       Swal.fire({
-        icon: 'warning',
-        title: 'Incomplete Data',
-        text: 'Please fill in all fields!',
+        icon: "warning",
+        title: "Incomplete Data",
+        text: "Please fill in all fields!",
       });
       return;
     }
 
     try {
-      const response = await fetch("http://localhost:5000/books", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(book),
-      });
-
-      if (response.ok) {
+      const response = await axios("http://localhost:5000/books");
+      if (response.data) {
         Swal.fire({
-          icon: 'success',
-          title: 'Success!',
-          text: 'Book added successfully',
+          icon: "success",
+          title: "Success!",
+          text: "Book added successfully",
         });
-        navigate("/")
-        setBook({ title: '', type: '', img: '' });
+        navigate("/");
+        setBook({ title: "", type: "", img: "" });
       } else {
         Swal.fire({
-          icon: 'error',
-          title: 'Failed',
-          text: 'Could not add book',
+          icon: "error",
+          title: "Failed",
+          text: "Could not add book",
         });
       }
     } catch (error) {
       console.log(error);
       Swal.fire({
-        icon: 'error',
-        title: 'Error',
-        text: 'Something went wrong',
+        icon: "error",
+        title: "Error",
+        text: "Something went wrong",
       });
     }
   };
 
   const handleCancel = () => {
-    setBook({ title: '', type: '', img: '' }); 
-    navigate("/")
-  } 
-  
+    setBook({ title: "", type: "", img: "" });
+    navigate("/");
+  };
 
   return (
     <div className="container mx-auto">
-        <NavBar />
+      <NavBar />
       <h1 className="text-3xl text-center m-5 p-5">Add Book Form</h1>
 
-      <div className='flex justify-center mb-4'>
+      <div className="flex justify-center mb-4">
         <fieldset className="fieldset w-96">
           <legend className="fieldset-legend">Book Title:</legend>
           <input
@@ -86,7 +79,7 @@ const Form = () => {
         </fieldset>
       </div>
 
-      <div className='flex justify-center mb-4'>
+      <div className="flex justify-center mb-4">
         <fieldset className="fieldset w-96">
           <legend className="fieldset-legend">Book Type:</legend>
           <input
@@ -100,7 +93,7 @@ const Form = () => {
         </fieldset>
       </div>
 
-      <div className='flex justify-center mb-4'>
+      <div className="flex justify-center mb-4">
         <fieldset className="fieldset w-96">
           <legend className="fieldset-legend">Book Img URL:</legend>
           <input
@@ -115,21 +108,31 @@ const Form = () => {
       </div>
 
       {book.img && (
-        <div className='flex justify-center mb-4'>
+        <div className="flex justify-center mb-4">
           <img
             src={book.img}
             alt="Book preview"
             className="mt-4 max-w-xs max-h-64 object-contain border rounded"
-            onError={(e) => { e.target.src = ''; }}
+            onError={(e) => {
+              e.target.src = "";
+            }}
           />
         </div>
       )}
 
       <div className="flex justify-center gap-4 mt-6">
-        <button className="btn btn-outline btn-primary" type="button" onClick={handleSubmit}>
+        <button
+          className="btn btn-outline btn-primary"
+          type="button"
+          onClick={handleSubmit}
+        >
           Add
         </button>
-        <button className="btn btn-outline btn-secondary" type="button" onClick={handleCancel}>
+        <button
+          className="btn btn-outline btn-secondary"
+          type="button"
+          onClick={handleCancel}
+        >
           Cancel
         </button>
       </div>
