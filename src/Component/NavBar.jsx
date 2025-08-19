@@ -6,7 +6,7 @@ const NavBar = () => {
       url: "/",
     },
     {
-      name: "Recommend Books",
+      name: "Add Books",
       url: '/add',
     },
     {
