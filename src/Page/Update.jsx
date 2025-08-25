@@ -47,7 +47,10 @@ const Update = () => {
 
       // });
 
-      const response = await axios.put(`http://localhost:5000/books/${id}`);
+      const response = await axios.put(
+        `https://db-json-server-simple-api-test.onrender.com/books/${id}`,
+        book
+      );
       if (response.data) {
         Swal.fire({
           icon: "success",
