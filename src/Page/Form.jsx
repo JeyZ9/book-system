@@ -30,7 +30,8 @@ const Form = () => {
 
     try {
       const response = await axios.post(
-        "https://db-json-server-simple-api-test.onrender.com/books"
+        "https://db-json-server-simple-api-test.onrender.com/books",
+        book
       );
       if (response.data) {
         Swal.fire({
