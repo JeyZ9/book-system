@@ -21,9 +21,12 @@ const Card = (props) => {
           icon: "success",
         });
         await new Promise((resolve) => setTimeout(resolve, 1000));
-        const response = await fetch("http://localhost:5000/books/" + id, {
-          method: "Delete",
-        });
+        const response = await fetch(
+          "https://db-json-server-simple-api-test.onrender.com/books/" + id,
+          {
+            method: "Delete",
+          }
+        );
         return response;
       }
     } catch (error) {

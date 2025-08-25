@@ -20,7 +20,7 @@ const Home = () => {
   };
 
   useEffect(() => {
-    fetch("http://localhost:5000/books")
+    fetch("https://db-json-server-simple-api-test.onrender.com/books")
       .then((res) => res.json())
       .then((data) => {
         setBooks(data);

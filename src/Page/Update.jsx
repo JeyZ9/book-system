@@ -10,7 +10,7 @@ const Update = () => {
   const [book, setBook] = useState({ title: "", type: "", img: "" });
 
   useEffect(() => {
-    fetch(`http://localhost:5000/books/${id}`)
+    fetch(`https://db-json-server-simple-api-test.onrender.com/books/${id}`)
       .then((res) => res.json())
       .then((data) => setBook(data))
       .catch((err) => console.error(err.message));
