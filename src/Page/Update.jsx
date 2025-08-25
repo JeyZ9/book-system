@@ -47,7 +47,7 @@ const Update = () => {
 
       // });
 
-      const response = await axios(`http://localhost:5000/books/${id}`);
+      const response = await axios.put(`http://localhost:5000/books/${id}`);
       if (response.data) {
         Swal.fire({
           icon: "success",

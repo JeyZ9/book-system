@@ -29,7 +29,7 @@ const Form = () => {
     }
 
     try {
-      const response = await axios("http://localhost:5000/books");
+      const response = await axios.post("http://localhost:5000/books");
       if (response.data) {
         Swal.fire({
           icon: "success",
